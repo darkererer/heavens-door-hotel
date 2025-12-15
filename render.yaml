@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: hotel-website
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    rootDir: "."
+    healthCheckPath: "/health"
+    autoDeploy: true
